@@ -10,5 +10,6 @@ def index(request):
             joke_json = json.loads(res.read())
             joke = joke_json['value']['joke']
             content = {"joke": joke}
-        return render(request, 'index.html', content)
+        return render(request, 'search/index.html', content)
+
 
